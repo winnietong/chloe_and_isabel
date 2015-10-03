@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListingGalleryCell" id="HFC-Oa-wkm" customClass="ListingGalleryCollectionViewCell" customModule="winnie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery-dotted-outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ib6-l7-gPh">
+                        <rect key="frame" x="5" y="5" width="189" height="191"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ib6-l7-gPh" secondAttribute="trailing" constant="5" id="1aP-pP-ZGj"/>
+                <constraint firstAttribute="bottom" secondItem="Ib6-l7-gPh" secondAttribute="bottom" constant="5" id="TbI-hq-kXs"/>
+                <constraint firstItem="Ib6-l7-gPh" firstAttribute="top" secondItem="HFC-Oa-wkm" secondAttribute="top" constant="5" id="cc2-zu-P3X"/>
+                <constraint firstItem="Ib6-l7-gPh" firstAttribute="leading" secondItem="HFC-Oa-wkm" secondAttribute="leading" constant="5" id="ffO-KL-kkQ"/>
+            </constraints>
+            <size key="customSize" width="199" height="201"/>
+            <connections>
+                <outlet property="galleryImageView" destination="Ib6-l7-gPh" id="c2S-Rb-uj7"/>
+            </connections>
+            <point key="canvasLocation" x="157.5" y="336.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gallery-dotted-outline.png" width="200" height="200"/>
+    </resources>
+</document>

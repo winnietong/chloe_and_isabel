@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4519D4EBE371969A671D0F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87FB10B02B31B731701CBEB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5438AFB81BC0556A001E44D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFB71BC0556A001E44D9 /* AppDelegate.swift */; };
+		5438AFBB1BC0556A001E44D9 /* winnie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFB91BC0556A001E44D9 /* winnie.xcdatamodeld */; };
+		5438AFC01BC0556A001E44D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFBE1BC0556A001E44D9 /* Main.storyboard */; };
+		5438AFC21BC0556A001E44D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFC11BC0556A001E44D9 /* Images.xcassets */; };
+		5438AFC51BC0556A001E44D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFC31BC0556A001E44D9 /* LaunchScreen.xib */; };
+		5438AFD11BC0556A001E44D9 /* winnieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFD01BC0556A001E44D9 /* winnieTests.swift */; };
+		5438AFDB1BC05664001E44D9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFDA1BC05664001E44D9 /* AppDependencies.swift */; };
+		5438AFE91BC05973001E44D9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFDF1BC05973001E44D9 /* Home.storyboard */; };
+		5438AFEA1BC05973001E44D9 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFE01BC05973001E44D9 /* HomeInteractor.swift */; };
+		5438AFEB1BC05973001E44D9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFE11BC05973001E44D9 /* HomePresenter.swift */; };
+		5438AFEC1BC05973001E44D9 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFE21BC05973001E44D9 /* HomeWireframe.swift */; };
+		5438AFF01BC05973001E44D9 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFE71BC05973001E44D9 /* HomeListViewController.swift */; };
+		5438AFF41BC05AAF001E44D9 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFF31BC05AAF001E44D9 /* RootWireframe.swift */; };
+		5438B0051BC06062001E44D9 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFF61BC06062001E44D9 /* Camera.storyboard */; };
+		5438B0061BC06062001E44D9 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFF71BC06062001E44D9 /* CameraInteractor.swift */; };
+		5438B0071BC06062001E44D9 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFF81BC06062001E44D9 /* CameraPresenter.swift */; };
+		5438B0081BC06062001E44D9 /* CameraWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFF91BC06062001E44D9 /* CameraWireframe.swift */; };
+		5438B0091BC06062001E44D9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFFB1BC06062001E44D9 /* CameraViewController.swift */; };
+		5438B00A1BC06062001E44D9 /* Listing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFFD1BC06062001E44D9 /* Listing.storyboard */; };
+		5438B00B1BC06062001E44D9 /* ListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFFE1BC06062001E44D9 /* ListingInteractor.swift */; };
+		5438B00C1BC06062001E44D9 /* ListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFFF1BC06062001E44D9 /* ListingPresenter.swift */; };
+		5438B00D1BC06062001E44D9 /* ListingWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438B0001BC06062001E44D9 /* ListingWireframe.swift */; };
+		5438B00E1BC06062001E44D9 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438B0021BC06062001E44D9 /* AddListingViewController.swift */; };
+		5438B01F1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438B01D1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.swift */; };
+		5438B0201BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5438B01E1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib */; };
+		5438B0301BC081F1001E44D9 /* btn-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B0291BC081F1001E44D9 /* btn-close.png */; };
+		5438B0311BC081F1001E44D9 /* camera-take-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02A1BC081F1001E44D9 /* camera-take-photo.png */; };
+		5438B0321BC081F1001E44D9 /* chloe-and-isabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02B1BC081F1001E44D9 /* chloe-and-isabel.png */; };
+		5438B0331BC081F1001E44D9 /* gallery-dotted-outline-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02C1BC081F1001E44D9 /* gallery-dotted-outline-camera.png */; };
+		5438B0341BC081F1001E44D9 /* gallery-dotted-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02D1BC081F1001E44D9 /* gallery-dotted-outline.png */; };
+		5438B0351BC081F1001E44D9 /* gallery-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02E1BC081F1001E44D9 /* gallery-icon.png */; };
+		5438B0361BC081F1001E44D9 /* remove-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02F1BC081F1001E44D9 /* remove-photo.png */; };
+		5438B0381BC08687001E44D9 /* ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438B0371BC08687001E44D9 /* ImageFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5438AFCB1BC0556A001E44D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5438AFAA1BC0556A001E44D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5438AFB11BC0556A001E44D9;
+			remoteInfo = winnie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13E60762F5574D4AC04EE9FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5438AFB21BC0556A001E44D9 /* winnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5438AFB61BC0556A001E44D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5438AFB71BC0556A001E44D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5438AFBA1BC0556A001E44D9 /* winnie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = winnie.xcdatamodel; sourceTree = "<group>"; };
+		5438AFBF1BC0556A001E44D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5438AFC11BC0556A001E44D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5438AFC41BC0556A001E44D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5438AFCA1BC0556A001E44D9 /* winnieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = winnieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5438AFCF1BC0556A001E44D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5438AFD01BC0556A001E44D9 /* winnieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winnieTests.swift; sourceTree = "<group>"; };
+		5438AFDA1BC05664001E44D9 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		5438AFDF1BC05973001E44D9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		5438AFE01BC05973001E44D9 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5438AFE11BC05973001E44D9 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5438AFE21BC05973001E44D9 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		5438AFE71BC05973001E44D9 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		5438AFF31BC05AAF001E44D9 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Common/RootWireframe.swift; sourceTree = "<group>"; };
+		5438AFF61BC06062001E44D9 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		5438AFF71BC06062001E44D9 /* CameraInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraInteractor.swift; sourceTree = "<group>"; };
+		5438AFF81BC06062001E44D9 /* CameraPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
+		5438AFF91BC06062001E44D9 /* CameraWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWireframe.swift; sourceTree = "<group>"; };
+		5438AFFB1BC06062001E44D9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5438AFFD1BC06062001E44D9 /* Listing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Listing.storyboard; sourceTree = "<group>"; };
+		5438AFFE1BC06062001E44D9 /* ListingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingInteractor.swift; sourceTree = "<group>"; };
+		5438AFFF1BC06062001E44D9 /* ListingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingPresenter.swift; sourceTree = "<group>"; };
+		5438B0001BC06062001E44D9 /* ListingWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingWireframe.swift; sourceTree = "<group>"; };
+		5438B0021BC06062001E44D9 /* AddListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
+		5438B01D1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListingGalleryCollectionViewCell.swift; path = "Custom Cells/ListingGalleryCollectionViewCell.swift"; sourceTree = "<group>"; };
+		5438B01E1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListingGalleryCollectionViewCell.xib; path = "Custom Cells/ListingGalleryCollectionViewCell.xib"; sourceTree = "<group>"; };
+		5438B0291BC081F1001E44D9 /* btn-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn-close.png"; path = "Icons/btn-close.png"; sourceTree = "<group>"; };
+		5438B02A1BC081F1001E44D9 /* camera-take-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-take-photo.png"; path = "Icons/camera-take-photo.png"; sourceTree = "<group>"; };
+		5438B02B1BC081F1001E44D9 /* chloe-and-isabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chloe-and-isabel.png"; path = "Icons/chloe-and-isabel.png"; sourceTree = "<group>"; };
+		5438B02C1BC081F1001E44D9 /* gallery-dotted-outline-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-dotted-outline-camera.png"; path = "Icons/gallery-dotted-outline-camera.png"; sourceTree = "<group>"; };
+		5438B02D1BC081F1001E44D9 /* gallery-dotted-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-dotted-outline.png"; path = "Icons/gallery-dotted-outline.png"; sourceTree = "<group>"; };
+		5438B02E1BC081F1001E44D9 /* gallery-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-icon.png"; path = "Icons/gallery-icon.png"; sourceTree = "<group>"; };
+		5438B02F1BC081F1001E44D9 /* remove-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remove-photo.png"; path = "Icons/remove-photo.png"; sourceTree = "<group>"; };
+		5438B0371BC08687001E44D9 /* ImageFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageFunctions.swift; path = Common/ImageFunctions.swift; sourceTree = "<group>"; };
+		60BE49081E50FABDE9D5D14E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C87FB10B02B31B731701CBEB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5438AFAF1BC0556A001E44D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4519D4EBE371969A671D0F /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5438AFC71BC0556A001E44D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B71A44FB67CBD1702DF8FDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C87FB10B02B31B731701CBEB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5438AFA91BC0556A001E44D9 = {
+			isa = PBXGroup;
+			children = (
+				5438AFB41BC0556A001E44D9 /* winnie */,
+				5438AFCD1BC0556A001E44D9 /* winnieTests */,
+				5438AFB31BC0556A001E44D9 /* Products */,
+				E85A30892EEC9514BE3C495F /* Pods */,
+				4B71A44FB67CBD1702DF8FDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5438AFB31BC0556A001E44D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFB21BC0556A001E44D9 /* winnie.app */,
+				5438AFCA1BC0556A001E44D9 /* winnieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5438AFB41BC0556A001E44D9 /* winnie */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFDA1BC05664001E44D9 /* AppDependencies.swift */,
+				5438AFB71BC0556A001E44D9 /* AppDelegate.swift */,
+				5438AFBE1BC0556A001E44D9 /* Main.storyboard */,
+				5438AFF21BC05A92001E44D9 /* Common */,
+				5438B0181BC075AE001E44D9 /* Custom Cells */,
+				5438AFDC1BC056EF001E44D9 /* Modules */,
+				5438AFC31BC0556A001E44D9 /* LaunchScreen.xib */,
+				5438AFC11BC0556A001E44D9 /* Images.xcassets */,
+				5438AFB91BC0556A001E44D9 /* winnie.xcdatamodeld */,
+				5438AFB51BC0556A001E44D9 /* Supporting Files */,
+			);
+			path = winnie;
+			sourceTree = "<group>";
+		};
+		5438AFB51BC0556A001E44D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5438B0111BC0628F001E44D9 /* Icons */,
+				5438AFB61BC0556A001E44D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5438AFCD1BC0556A001E44D9 /* winnieTests */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFD01BC0556A001E44D9 /* winnieTests.swift */,
+				5438AFCE1BC0556A001E44D9 /* Supporting Files */,
+			);
+			path = winnieTests;
+			sourceTree = "<group>";
+		};
+		5438AFCE1BC0556A001E44D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFCF1BC0556A001E44D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5438AFDC1BC056EF001E44D9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFF51BC06062001E44D9 /* Camera */,
+				5438AFFC1BC06062001E44D9 /* Listing */,
+				5438AFDE1BC05973001E44D9 /* Home */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		5438AFDE1BC05973001E44D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFDF1BC05973001E44D9 /* Home.storyboard */,
+				5438AFE01BC05973001E44D9 /* HomeInteractor.swift */,
+				5438AFE11BC05973001E44D9 /* HomePresenter.swift */,
+				5438AFE21BC05973001E44D9 /* HomeWireframe.swift */,
+				5438AFE31BC05973001E44D9 /* ViewControllers */,
+			);
+			name = Home;
+			path = Modules/Home;
+			sourceTree = "<group>";
+		};
+		5438AFE31BC05973001E44D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFE71BC05973001E44D9 /* HomeListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5438AFF21BC05A92001E44D9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5438B0371BC08687001E44D9 /* ImageFunctions.swift */,
+				5438AFF31BC05AAF001E44D9 /* RootWireframe.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		5438AFF51BC06062001E44D9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFF61BC06062001E44D9 /* Camera.storyboard */,
+				5438AFF71BC06062001E44D9 /* CameraInteractor.swift */,
+				5438AFF81BC06062001E44D9 /* CameraPresenter.swift */,
+				5438AFF91BC06062001E44D9 /* CameraWireframe.swift */,
+				5438AFFA1BC06062001E44D9 /* ViewControllers */,
+			);
+			name = Camera;
+			path = Modules/Camera;
+			sourceTree = "<group>";
+		};
+		5438AFFA1BC06062001E44D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFFB1BC06062001E44D9 /* CameraViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5438AFFC1BC06062001E44D9 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				5438AFFD1BC06062001E44D9 /* Listing.storyboard */,
+				5438AFFE1BC06062001E44D9 /* ListingInteractor.swift */,
+				5438AFFF1BC06062001E44D9 /* ListingPresenter.swift */,
+				5438B0001BC06062001E44D9 /* ListingWireframe.swift */,
+				5438B0011BC06062001E44D9 /* ViewControllers */,
+			);
+			name = Listing;
+			path = Modules/Listing;
+			sourceTree = "<group>";
+		};
+		5438B0011BC06062001E44D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5438B0021BC06062001E44D9 /* AddListingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5438B0111BC0628F001E44D9 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5438B0291BC081F1001E44D9 /* btn-close.png */,
+				5438B02A1BC081F1001E44D9 /* camera-take-photo.png */,
+				5438B02B1BC081F1001E44D9 /* chloe-and-isabel.png */,
+				5438B02C1BC081F1001E44D9 /* gallery-dotted-outline-camera.png */,
+				5438B02D1BC081F1001E44D9 /* gallery-dotted-outline.png */,
+				5438B02E1BC081F1001E44D9 /* gallery-icon.png */,
+				5438B02F1BC081F1001E44D9 /* remove-photo.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		5438B0181BC075AE001E44D9 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5438B01D1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.swift */,
+				5438B01E1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		E85A30892EEC9514BE3C495F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60BE49081E50FABDE9D5D14E /* Pods.debug.xcconfig */,
+				13E60762F5574D4AC04EE9FF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5438AFB11BC0556A001E44D9 /* winnie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5438AFD41BC0556A001E44D9 /* Build configuration list for PBXNativeTarget "winnie" */;
+			buildPhases = (
+				365FE61F927812D7FEAF8841 /* Check Pods Manifest.lock */,
+				5438AFAE1BC0556A001E44D9 /* Sources */,
+				5438AFAF1BC0556A001E44D9 /* Frameworks */,
+				5438AFB01BC0556A001E44D9 /* Resources */,
+				8CD0B4D5CCDAA0CC1C6DF345 /* Embed Pods Frameworks */,
+				6E147A0B89F04A106AA49460 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = winnie;
+			productName = winnie;
+			productReference = 5438AFB21BC0556A001E44D9 /* winnie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5438AFC91BC0556A001E44D9 /* winnieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5438AFD71BC0556A001E44D9 /* Build configuration list for PBXNativeTarget "winnieTests" */;
+			buildPhases = (
+				5438AFC61BC0556A001E44D9 /* Sources */,
+				5438AFC71BC0556A001E44D9 /* Frameworks */,
+				5438AFC81BC0556A001E44D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5438AFCC1BC0556A001E44D9 /* PBXTargetDependency */,
+			);
+			name = winnieTests;
+			productName = winnieTests;
+			productReference = 5438AFCA1BC0556A001E44D9 /* winnieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5438AFAA1BC0556A001E44D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Winnie Tong";
+				TargetAttributes = {
+					5438AFB11BC0556A001E44D9 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					5438AFC91BC0556A001E44D9 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 5438AFB11BC0556A001E44D9;
+					};
+				};
+			};
+			buildConfigurationList = 5438AFAD1BC0556A001E44D9 /* Build configuration list for PBXProject "winnie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5438AFA91BC0556A001E44D9;
+			productRefGroup = 5438AFB31BC0556A001E44D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5438AFB11BC0556A001E44D9 /* winnie */,
+				5438AFC91BC0556A001E44D9 /* winnieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5438AFB01BC0556A001E44D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438AFC01BC0556A001E44D9 /* Main.storyboard in Resources */,
+				5438B0351BC081F1001E44D9 /* gallery-icon.png in Resources */,
+				5438AFC51BC0556A001E44D9 /* LaunchScreen.xib in Resources */,
+				5438B0331BC081F1001E44D9 /* gallery-dotted-outline-camera.png in Resources */,
+				5438B0201BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib in Resources */,
+				5438B0311BC081F1001E44D9 /* camera-take-photo.png in Resources */,
+				5438B0361BC081F1001E44D9 /* remove-photo.png in Resources */,
+				5438AFC21BC0556A001E44D9 /* Images.xcassets in Resources */,
+				5438AFE91BC05973001E44D9 /* Home.storyboard in Resources */,
+				5438B0051BC06062001E44D9 /* Camera.storyboard in Resources */,
+				5438B0321BC081F1001E44D9 /* chloe-and-isabel.png in Resources */,
+				5438B00A1BC06062001E44D9 /* Listing.storyboard in Resources */,
+				5438B0301BC081F1001E44D9 /* btn-close.png in Resources */,
+				5438B0341BC081F1001E44D9 /* gallery-dotted-outline.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5438AFC81BC0556A001E44D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		365FE61F927812D7FEAF8841 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E147A0B89F04A106AA49460 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD0B4D5CCDAA0CC1C6DF345 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5438AFAE1BC0556A001E44D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438B0081BC06062001E44D9 /* CameraWireframe.swift in Sources */,
+				5438AFDB1BC05664001E44D9 /* AppDependencies.swift in Sources */,
+				5438AFF01BC05973001E44D9 /* HomeListViewController.swift in Sources */,
+				5438AFB81BC0556A001E44D9 /* AppDelegate.swift in Sources */,
+				5438B0071BC06062001E44D9 /* CameraPresenter.swift in Sources */,
+				5438B0091BC06062001E44D9 /* CameraViewController.swift in Sources */,
+				5438AFBB1BC0556A001E44D9 /* winnie.xcdatamodeld in Sources */,
+				5438B00C1BC06062001E44D9 /* ListingPresenter.swift in Sources */,
+				5438AFF41BC05AAF001E44D9 /* RootWireframe.swift in Sources */,
+				5438B0381BC08687001E44D9 /* ImageFunctions.swift in Sources */,
+				5438B0061BC06062001E44D9 /* CameraInteractor.swift in Sources */,
+				5438B01F1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.swift in Sources */,
+				5438AFEB1BC05973001E44D9 /* HomePresenter.swift in Sources */,
+				5438B00E1BC06062001E44D9 /* AddListingViewController.swift in Sources */,
+				5438AFEA1BC05973001E44D9 /* HomeInteractor.swift in Sources */,
+				5438B00D1BC06062001E44D9 /* ListingWireframe.swift in Sources */,
+				5438AFEC1BC05973001E44D9 /* HomeWireframe.swift in Sources */,
+				5438B00B1BC06062001E44D9 /* ListingInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5438AFC61BC0556A001E44D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438AFD11BC0556A001E44D9 /* winnieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5438AFCC1BC0556A001E44D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5438AFB11BC0556A001E44D9 /* winnie */;
+			targetProxy = 5438AFCB1BC0556A001E44D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5438AFBE1BC0556A001E44D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5438AFBF1BC0556A001E44D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5438AFC31BC0556A001E44D9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5438AFC41BC0556A001E44D9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5438AFD21BC0556A001E44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5438AFD31BC0556A001E44D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5438AFD51BC0556A001E44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BE49081E50FABDE9D5D14E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = winnie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5438AFD61BC0556A001E44D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E60762F5574D4AC04EE9FF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = winnie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5438AFD81BC0556A001E44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = winnieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winnie.app/winnie";
+			};
+			name = Debug;
+		};
+		5438AFD91BC0556A001E44D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = winnieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winnie.app/winnie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5438AFAD1BC0556A001E44D9 /* Build configuration list for PBXProject "winnie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5438AFD21BC0556A001E44D9 /* Debug */,
+				5438AFD31BC0556A001E44D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5438AFD41BC0556A001E44D9 /* Build configuration list for PBXNativeTarget "winnie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5438AFD51BC0556A001E44D9 /* Debug */,
+				5438AFD61BC0556A001E44D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5438AFD71BC0556A001E44D9 /* Build configuration list for PBXNativeTarget "winnieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5438AFD81BC0556A001E44D9 /* Debug */,
+				5438AFD91BC0556A001E44D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5438AFB91BC0556A001E44D9 /* winnie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5438AFBA1BC0556A001E44D9 /* winnie.xcdatamodel */,
+			);
+			currentVersion = 5438AFBA1BC0556A001E44D9 /* winnie.xcdatamodel */;
+			path = winnie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5438AFAA1BC0556A001E44D9 /* Project object */;
+}

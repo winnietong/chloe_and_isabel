@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# forces cocoapods to use embedded frameworks
+use_frameworks!
+
+pod 'SDWebImage'
+pod 'SZTextView'
+pod 'Alamofire', '~> 1.1'
+pod 'SwiftyJSON'
+pod 'TPKeyboardAvoiding'
+pod 'Venmo-iOS-SDK', :git => 'https://github.com/yeti/venmo-ios-sdk/'
+pod 'Braintree'
+pod 'pop', '~> 1.0'
+
+# remove :head once new release happens including fix for 0.26 cocoapods
+pod 'TSMessages', :head
+
+# using our fork until changes are merged and released
+pod 'RestKit', :git => 'https://github.com/yeti/RestKit'

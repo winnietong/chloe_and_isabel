@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home List View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="HomeList" id="vXZ-lx-hvc" customClass="HomeListViewController" customModule="winnie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClR-SV-YCi">
+                                <rect key="frame" x="18" y="20" width="380" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6x6-rU-9Jf"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chloe-and-isabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="PG6-ay-mvQ">
+                                <rect key="frame" x="60" y="298" width="294" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H59-HJ-awV">
+                                <rect key="frame" x="10" y="666" width="394" height="60"/>
+                                <color key="backgroundColor" red="0.48236142799999998" green="0.56409702539999995" blue="0.66300843249999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oXQ-BL-7FZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="SHARE YOUR ITEM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="listItemButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iAG-8U-71r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ClR-SV-YCi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="2" id="7m4-tf-Jgk"/>
+                            <constraint firstItem="ClR-SV-YCi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9lr-5E-TnI"/>
+                            <constraint firstAttribute="centerX" secondItem="PG6-ay-mvQ" secondAttribute="centerX" id="Kqy-Vk-XCZ"/>
+                            <constraint firstAttribute="trailing" secondItem="PG6-ay-mvQ" secondAttribute="trailing" constant="60" id="Nhm-4K-xuo"/>
+                            <constraint firstItem="ClR-SV-YCi" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="SUj-Mp-ysz"/>
+                            <constraint firstItem="H59-HJ-awV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Uxs-my-V23"/>
+                            <constraint firstItem="PG6-ay-mvQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="iNl-8i-b3x"/>
+                            <constraint firstAttribute="centerY" secondItem="PG6-ay-mvQ" secondAttribute="centerY" id="qvs-6F-e2I"/>
+                            <constraint firstAttribute="trailing" secondItem="H59-HJ-awV" secondAttribute="trailing" constant="10" id="uSu-oL-nvB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="H59-HJ-awV" secondAttribute="bottom" constant="10" id="vWi-HL-rYF"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <containerView opaque="NO" contentMode="scaleToFill" id="5MO-Vo-mA5">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </containerView>
+            </objects>
+            <point key="canvasLocation" x="405" y="296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chloe-and-isabel.png" width="344" height="140"/>
+    </resources>
+</document>
