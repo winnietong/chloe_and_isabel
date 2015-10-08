@@ -30,20 +30,39 @@ class RootWireframe: NSObject {
     navigationController.popViewControllerAnimated(animated!)
   }
   
-  func presentToNavigationController(viewController: UIViewController) {
-    navigationController.presentViewController(viewController, animated: true, completion: nil)
+  func presentToNavigationController(viewController: UIViewController, animated: Bool? = true) {
+    navigationController.presentViewController(viewController, animated: animated!, completion: nil)
   }
   
   func popToRootViewControllerAnimated(animated: Bool? = false) {
     navigationController.popToRootViewControllerAnimated(animated!)
   }
   
-//  func dismissViewControllerWithTransition(viewController: UIViewController, isPresenting: Bool? = false) {
-//    let transitionManager = TransitionManager()
-//    transitionManager.presenting = isPresenting!
-//    if let navController = viewController.navigationController {
-//      navController.transitioningDelegate = transitionManager
-//      navController.dismissViewControllerAnimated(true, completion: nil)
-//    }
-//  }
+  func popToRootViewController(animated: Bool? = true) {
+    navigationController.popToRootViewControllerAnimated(animated!)
+  }
+
+  // Example of how to use the tranisition manager with navigation controller.
+  // Note: Presenting a view controller will not include the navigation controller,
+  // so here's a hacky way of getting around it: setting a navController with our toVC
+  // and letting the fromVC present it.
+  
+  // Here's the stack overflow answer that helped me through this:
+  // http://stackoverflow.com/questions/25444213/presenting-viewcontroller-with-navigationviewcontroller-swift
+  
+  func presentWithTransitionManager(toViewController: UIViewController, fromViewController: UIViewController?, presenting: Bool? = true) {
+    let transitionManager = TransitionManager()
+    transitionManager.presenting = presenting!
+    // Get the navigation controller of the passed in viewController
+    if (presenting == true) {
+      var navController = UINavigationController(rootViewController: toViewController)
+      navController.transitioningDelegate = transitionManager
+      fromViewController!.presentViewController(navController, animated: true, completion: nil)
+    } else {
+      var navController = toViewController.navigationController
+      navController!.transitioningDelegate = transitionManager
+      navController!.dismissViewControllerAnimated(true, completion: nil)
+    }
+  }
+  
 }

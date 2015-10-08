@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -115,7 +116,7 @@
                                                     <constraint firstAttribute="height" constant="60" id="IGx-fM-f1P"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                <state key="normal" title="SHARE YOUR ITEM">
+                                                <state key="normal" title="PREVIEW!">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -194,11 +195,91 @@
                         <outlet property="descriptionTextView" destination="7mL-y2-EE0" id="dci-QO-9wf"/>
                         <outlet property="galleryCollectionView" destination="mAy-xn-45P" id="1s7-bD-FVc"/>
                         <outlet property="listPriceLabel" destination="g7j-eI-wrZ" id="hOp-ER-Dxe"/>
+                        <outlet property="titleTextField" destination="fpA-8z-Fpw" id="QS9-86-7tm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82B-CS-L8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1238.5" y="217.5"/>
         </scene>
+        <!--Preview Screen-->
+        <scene sceneID="j8u-ab-MbQ">
+            <objects>
+                <viewController storyboardIdentifier="PreviewListing" title="Preview Screen" id="RfS-4x-5MT" customClass="PreviewListingViewController" customModule="winnie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FzP-eK-Xxq"/>
+                        <viewControllerLayoutGuide type="bottom" id="XDn-WG-F7y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vkf-V2-v2V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chloe-and-isabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-ZR-Ytu">
+                                <rect key="frame" x="16" y="0.0" width="382" height="382"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JfE-ZR-Ytu" secondAttribute="height" multiplier="1:1" id="qlJ-mM-1W4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVf-IM-Mpc" userLabel="Title">
+                                <rect key="frame" x="16" y="402" width="382" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.30726512499999997" green="0.31514824279999998" blue="0.32270998680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-Qb-1hh" userLabel="Description">
+                                <rect key="frame" x="16" y="440" width="382" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Y4C-Oa-kbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.30726512499999997" green="0.31514824279999998" blue="0.32270998680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkz-Wu-OVC">
+                                <rect key="frame" x="10" y="666" width="394" height="60"/>
+                                <color key="backgroundColor" red="0.48236142799999998" green="0.56409702539999995" blue="0.66300843249999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="keA-Xa-g1r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="SHARE YOUR LISTING">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareItemButton:" destination="ZHw-Rw-WSv" eventType="touchUpInside" id="gEx-3F-MnX"/>
+                                    <action selector="shareListingButton:" destination="RfS-4x-5MT" eventType="touchUpInside" id="4jd-RK-nG8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94560439590000001" green="1" blue="0.98023498600000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jkz-Wu-OVC" firstAttribute="leading" secondItem="Vkf-V2-v2V" secondAttribute="leading" constant="10" id="4oP-3v-UBq"/>
+                            <constraint firstAttribute="trailing" secondItem="jkz-Wu-OVC" secondAttribute="trailing" constant="10" id="7iC-HU-3NN"/>
+                            <constraint firstItem="JfE-ZR-Ytu" firstAttribute="top" secondItem="Vkf-V2-v2V" secondAttribute="topMargin" id="C3z-eP-It5"/>
+                            <constraint firstItem="O7s-Qb-1hh" firstAttribute="leading" secondItem="Vkf-V2-v2V" secondAttribute="leadingMargin" id="GWx-Ee-I4d"/>
+                            <constraint firstItem="XDn-WG-F7y" firstAttribute="top" secondItem="jkz-Wu-OVC" secondAttribute="bottom" constant="10" id="JaQ-Hp-Ixd"/>
+                            <constraint firstItem="O7s-Qb-1hh" firstAttribute="top" secondItem="SVf-IM-Mpc" secondAttribute="bottom" constant="20" id="WK4-b1-Sxt"/>
+                            <constraint firstItem="JfE-ZR-Ytu" firstAttribute="leading" secondItem="Vkf-V2-v2V" secondAttribute="leadingMargin" id="bEr-w6-zzS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JfE-ZR-Ytu" secondAttribute="trailing" id="bIp-bI-DMz"/>
+                            <constraint firstItem="SVf-IM-Mpc" firstAttribute="leading" secondItem="Vkf-V2-v2V" secondAttribute="leadingMargin" id="gfD-u8-6vG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O7s-Qb-1hh" secondAttribute="trailing" id="hiT-tU-2YU"/>
+                            <constraint firstItem="SVf-IM-Mpc" firstAttribute="top" secondItem="JfE-ZR-Ytu" secondAttribute="bottom" constant="20" id="lbh-aK-73u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SVf-IM-Mpc" secondAttribute="trailing" id="uGL-tx-qtu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="myDescription" destination="O7s-Qb-1hh" id="kf8-Pk-X2A"/>
+                        <outlet property="myTitle" destination="SVf-IM-Mpc" id="uwT-Qo-jpR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ul0-VU-eKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683" y="252"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="chloe-and-isabel.png" width="344" height="140"/>
+    </resources>
 </document>

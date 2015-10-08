@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D4519D4EBE371969A671D0F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87FB10B02B31B731701CBEB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		542577ED1BC4ABFF003FF2A3 /* PreviewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542577EC1BC4ABFF003FF2A3 /* PreviewListingViewController.swift */; };
 		5438AFB81BC0556A001E44D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFB71BC0556A001E44D9 /* AppDelegate.swift */; };
 		5438AFBB1BC0556A001E44D9 /* winnie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5438AFB91BC0556A001E44D9 /* winnie.xcdatamodeld */; };
 		5438AFC01BC0556A001E44D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5438AFBE1BC0556A001E44D9 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		5438B0351BC081F1001E44D9 /* gallery-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02E1BC081F1001E44D9 /* gallery-icon.png */; };
 		5438B0361BC081F1001E44D9 /* remove-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5438B02F1BC081F1001E44D9 /* remove-photo.png */; };
 		5438B0381BC08687001E44D9 /* ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438B0371BC08687001E44D9 /* ImageFunctions.swift */; };
+		545604671BC6328E003C90A5 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545604661BC6328E003C90A5 /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		13E60762F5574D4AC04EE9FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		542577EC1BC4ABFF003FF2A3 /* PreviewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewListingViewController.swift; sourceTree = "<group>"; };
 		5438AFB21BC0556A001E44D9 /* winnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5438AFB61BC0556A001E44D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5438AFB71BC0556A001E44D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		5438B02E1BC081F1001E44D9 /* gallery-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-icon.png"; path = "Icons/gallery-icon.png"; sourceTree = "<group>"; };
 		5438B02F1BC081F1001E44D9 /* remove-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remove-photo.png"; path = "Icons/remove-photo.png"; sourceTree = "<group>"; };
 		5438B0371BC08687001E44D9 /* ImageFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageFunctions.swift; path = Common/ImageFunctions.swift; sourceTree = "<group>"; };
+		545604661BC6328E003C90A5 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = "Transition Managers/TransitionManager.swift"; sourceTree = "<group>"; };
 		60BE49081E50FABDE9D5D14E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C87FB10B02B31B731701CBEB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 				5438AFBE1BC0556A001E44D9 /* Main.storyboard */,
 				5438AFF21BC05A92001E44D9 /* Common */,
 				5438B0181BC075AE001E44D9 /* Custom Cells */,
+				545604651BC63261003C90A5 /* Transition Managers */,
 				5438AFDC1BC056EF001E44D9 /* Modules */,
 				5438AFC31BC0556A001E44D9 /* LaunchScreen.xib */,
 				5438AFC11BC0556A001E44D9 /* Images.xcassets */,
@@ -264,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				5438B0021BC06062001E44D9 /* AddListingViewController.swift */,
+				542577EC1BC4ABFF003FF2A3 /* PreviewListingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -289,6 +295,14 @@
 				5438B01E1BC075EA001E44D9 /* ListingGalleryCollectionViewCell.xib */,
 			);
 			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		545604651BC63261003C90A5 /* Transition Managers */ = {
+			isa = PBXGroup;
+			children = (
+				545604661BC6328E003C90A5 /* TransitionManager.swift */,
+			);
+			name = "Transition Managers";
 			sourceTree = "<group>";
 		};
 		E85A30892EEC9514BE3C495F /* Pods */ = {
@@ -478,7 +492,9 @@
 				5438B00E1BC06062001E44D9 /* AddListingViewController.swift in Sources */,
 				5438AFEA1BC05973001E44D9 /* HomeInteractor.swift in Sources */,
 				5438B00D1BC06062001E44D9 /* ListingWireframe.swift in Sources */,
+				545604671BC6328E003C90A5 /* TransitionManager.swift in Sources */,
 				5438AFEC1BC05973001E44D9 /* HomeWireframe.swift in Sources */,
+				542577ED1BC4ABFF003FF2A3 /* PreviewListingViewController.swift in Sources */,
 				5438B00B1BC06062001E44D9 /* ListingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

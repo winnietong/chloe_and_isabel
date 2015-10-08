@@ -50,7 +50,7 @@ class HomeWireframe: NSObject {
     // Pushes Listing View Controller without Animation
     // Presents camera wireframe
     listingWireframe.presentAddListing(homeListViewController!, animated: false)
-    presentCameraInterface()
+//    presentCameraInterface()
   }
   
   // Presents the iPhone Camera view

@@ -14,9 +14,14 @@ class ListingPresenter: NSObject {
   var interactor: ListingInteractor!
   
   var addListingViewController: AddListingViewController!
+  var previewListingViewController: PreviewListingViewController!
 
-  func dismissViewController() {
-    wireframe.dismissListing()
+  func dismissToRootWithTransition() {
+    wireframe.dismissToRootWithTransition()
+  }
+  
+  func postListing(title: String, description: String) {
+    wireframe.presentPreviewScreen(title, description: description)
   }
   
   func presentCameraInterface() {

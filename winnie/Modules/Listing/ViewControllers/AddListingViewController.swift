@@ -20,6 +20,7 @@ class AddListingViewController: UIViewController, UICollectionViewDelegate, UICo
   
   @IBOutlet weak var listPriceLabel: UILabel!
   @IBOutlet weak var galleryCollectionView: UICollectionView!
+  @IBOutlet weak var titleTextField: UITextField!
   @IBOutlet weak var descriptionTextView: UITextView!
   
   override func viewDidLoad() {
@@ -41,13 +42,11 @@ class AddListingViewController: UIViewController, UICollectionViewDelegate, UICo
   }
   
   @IBAction func shareItemButton(sender: AnyObject) {
-    // In the traditional case, this item would pass the appropriate data
-    // along to the presenter and make a POST request there.
-    presenter.dismissViewController()
+    presenter.postListing(titleTextField.text, description: descriptionTextView.text)
   }
   
   func closeButtonClick() {
-    presenter.dismissViewController()
+    presenter.dismissToRootWithTransition()
   }
   
   func textViewDidBeginEditing(textView: UITextView) {
